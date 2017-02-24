@@ -11,6 +11,7 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   margin: 0 5%;
+  font-family: 'Raleway', sans-serif;
 }
 
 header,
@@ -25,12 +26,16 @@ ul {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
+a,
+h1,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 a,
 h3 {
+  text-decoration: none;
   text-transform: uppercase;
 }
 
