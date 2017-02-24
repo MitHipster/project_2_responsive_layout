@@ -8,7 +8,7 @@
 
 body {
   color: #2b2b2b;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   margin: 0 5%;
   font-family: 'Raleway', sans-serif;
@@ -39,13 +39,21 @@ h3 {
   text-transform: uppercase;
 }
 
+a {
+  display: block;
+  color: #2b2b2b;
+  padding: 12px 0;
+  margin-bottom: 5px;
+}
+
 img {
   max-width: 100%;
 }
 
 p {
   color: #696969;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 /* ================================
@@ -62,7 +70,9 @@ p {
 
 /* ------- Page Elements ------- */
 
-
+.profile-image {
+  padding: 25px 50px;
+}
 
 /* ================================
     Media Queries
