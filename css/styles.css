@@ -6,11 +6,41 @@
 }
 
 body {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #2b2b2b;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 5%;
 }
 
+header,
+nav,
+section,
+main {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+h3 {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: #696969;
+  font-size: 1.25rem;
+}
 
 /* ================================
     Base Layout Styles
