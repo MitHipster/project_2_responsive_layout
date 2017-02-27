@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="description" content="">
+    <meta name="author" content="Tim Acker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -12,52 +12,66 @@
   </head>
   <body>
     
-    <header>
+    <header id="home">
       <h1>Student Name</h1>
     </header>
     
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+    <nav id="nav-header">
+      <ul class="nav-links-header">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     
-    <section>
+    <section id="profile">
       <img class="profile-image" src="img/responsive-layout-profile.png" alt="This is my avatar">
       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </section>
     
-    <main>
+    <main id="portfolio">
       <h3>Portfolio</h3>
 
-      <img class="portfolio-img" src="img/portfolio-1.png" alt="Marketing page website reference">
-      <h2>Marketing Page</h2>
-      <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      <div id="portfolio-examples">
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-1.png" alt="Marketing page website reference">
+          <h2>Marketing Page</h2>
+          <p class="description">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </figure>
 
-      <img class="portfolio-img" src="img/portfolio-2.png" alt="Search page website reference">
-      <h2>Search Page</h2>
-      <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-2.png" alt="Search page website reference">
+          <h2>Search Page</h2>
+          <p class="description">This project searches through a specific database to find information that the user is trying to look up.</p>
+        </figure>
 
-      <img class="portfolio-img" src="img/portfolio-3.png" alt="Travel app website reference">
-      <h2>Travel App</h2>
-      <p>This project compares travel times based an different transportation methods and tells you the best one.</p>
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-3.png" alt="Travel app website reference">
+          <h2>Travel App</h2>
+          <p class="description">This project compares travel times based an different transportation methods and tells you the best one.</p>
+        </figure>
 
-      <img class="portfolio-img" src="img/portfolio-4.png" alt="Map of favorite spots website reference">
-      <h2>Map of Favorite Spots</h2>
-      <p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-4.png" alt="Map of favorite spots website reference">
+          <h2>Map of Favorite Spots</h2>
+          <p class="description">This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </figure>
 
-      <img class="portfolio-img" src="img/portfolio-5.png" alt="Photo gallery website reference">
-      <h2>Photo Gallery</h2>
-      <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-5.png" alt="Photo gallery website reference">
+          <h2>Photo Gallery</h2>
+          <p class="description">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </figure>
 
-      <img class="portfolio-img" src="img/portfolio-6.png" alt="Calculator website reference">
-      <h2>Calculator</h2>
-      <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        <figure class="portfolio-block">
+          <img class="portfolio-img" src="img/portfolio-6.png" alt="Calculator website reference">
+          <h2>Calculator</h2>
+          <p class="description">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </figure>
+      </div>
     </main>
     
-    <section>
+    <section id="contact">
       <h3>Contact</h3>
       <p id="message">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
       <p class="contact-info">Phone <strong>+1 (111) 555-1234</strong></p>
@@ -69,7 +83,14 @@
   
     <footer>
       <p><strong>Student Name</strong></p>
-      <a href="#">Back to top</a>
+      <a href="#home">Back to top</a>
+      <nav id="nav-footer">
+        <ul class="nav-links-footer">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </footer>
     
   </body>

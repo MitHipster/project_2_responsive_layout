@@ -42,7 +42,6 @@ h3 {
 
 a {
   display: block;
-  font-size: 1rem;
   color: #696969;
   padding: 12px 0;
 }
@@ -69,6 +68,9 @@ hr {
 
 /* --------- Navigation -------- */
 
+#nav-footer {
+  display: none;
+}
 
 
 /* ----- Layout Containers ----- */
@@ -83,6 +85,10 @@ main {
 section,
 main {
   padding-bottom: 50px;
+}
+
+figure {
+  margin: 0;
 }
 
 footer {
@@ -100,12 +106,8 @@ footer {
   padding: 30px 50px;
 }
 
-.portfolio-img {
-  margin-top: 40px;
-}
-
-.portfolio-img:first-of-type {
-  margin-top: 0;
+.description {
+  margin-bottom: 40px;
 }
 
 #message {
@@ -122,10 +124,107 @@ footer {
     Media Queries
    ================================ */
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  
+  header {
+    padding-top: 25px;
+  }
+  
+  p {
+    font-size: 1.35rem;
+  }
+  
+  /* --------- Navigation -------- */
+  
+  .nav-links-header {
+    display: flex;
+    justify-content: center;
+/*    padding: 0 20%;*/
+    margin-bottom: 25px;
+  }
+  
+  a {
+    padding: 12px 20px;
+  }
+  
+  /* ---------- Profile ---------- */
+  
+  #profile {
+    display: flex;
+  }
+  
+  .profile-image {
+    order: 2;
+    width: 40%;
+    height: 40%;
+    margin-left: 10px;
+    padding: 0;
+  }
+  
+  #profile p {
+    text-align: left;
+  }
+  
+  /* --------- Portfolio --------- */
+  
+  #portfolio-examples {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .portfolio-block {
+    width: 49%;
+  }
+  
+  .description {
+    font-size: 1.05rem;
+    padding: 0 2%;
+  }
+  
+  /* ---------- Contact ---------- */
+  
+  #message {
+    padding: 0 100px 20px;
+  }
+  
+  /* ---------- Footer ----------- */
+  
+  footer {
+    margin: 0 0 75px;
+  }
+  
+  footer > a {
+    display: none;
+  }
+  
+  footer > p {
+    font-size: 1.05rem;
+  }
+  
+  #nav-footer {
+    display: block;
+  }
+  
+  .nav-links-footer {
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links-footer li {
+    margin-bottom: 0;
+  }
+  
+  .nav-links-footer li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
   
   
 }
+
 
 
 
