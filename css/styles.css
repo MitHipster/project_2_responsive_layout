@@ -74,8 +74,7 @@ main {
   text-align: center;
 }
 
-section,
-main {
+section {
   padding-bottom: 50px;
 }
 
@@ -93,12 +92,24 @@ footer {
 
 /* ------- Page Elements ------- */
 
-.profile-image {
-  padding: 30px 50px;
+#profile > p {
+  margin-top: 20px;
 }
 
 .description {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+#skills-group {
+  margin-bottom: 0;
+}
+
+#skills-group li {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #696969;
+  margin-right: 5px;
 }
 
 #message {
@@ -110,7 +121,7 @@ footer {
 }
 
 
-/* -------- Footer / Nax ------- */
+/* -------- Footer / Nav ------- */
 
 #nav-footer {
   display: none;
@@ -152,11 +163,15 @@ footer {
     display: flex;
   }
   
+  #profile > p {
+    margin-top: 0;
+  }
+  
   .profile-image {
     order: 2;
     width: 40%;
     height: 40%;
-    margin-left: 10px;
+    margin-left: 20px;
     padding: 0;
   }
   
@@ -179,14 +194,34 @@ footer {
   
   .description {
     font-size: 1.05rem;
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   
   
-  /* ---------- Contact ---------- */
+  /* ------ Skills / Contact ----- */
   
   #message {
-    padding: 0 100px 20px;
+    padding: 0 100px;
+  }
+  
+  #skills {
+    display: flex;
+  }
+  
+  .skills-image {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  #skills-group {
+    margin-top: 0;
+  }
+  
+  #skills-group li {
+    font-size: 1.35rem;
   }
   
   
@@ -263,7 +298,8 @@ footer {
   
   /* ---------- Profile ---------- */
   
-  .profile-image {
+  .profile-image,
+  .skills-image {
     width: 45%;
     height: 45%;
   }
@@ -276,10 +312,18 @@ footer {
   }
   
   
-  /* ---------- Contact ---------- */
+  /* ------ Skills / Contact ----- */
   
   #message {
-    padding: 0 200px 20px;
+    padding: 0 200px;
+  }
+  
+  #skills-group {
+    padding: 0 30px;
+  }
+  
+  #skills-group li {
+    font-size: 1.2rem;
   }
 }
 
