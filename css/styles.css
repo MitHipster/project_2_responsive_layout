@@ -66,17 +66,9 @@ hr {
     Base Layout Styles
    ================================ */
 
-/* --------- Navigation -------- */
-
-#nav-footer {
-  display: none;
-}
-
-
 /* ----- Layout Containers ----- */
 
 header,
-nav,
 section,
 main {
   text-align: center;
@@ -99,7 +91,6 @@ footer {
 }
 
 
-
 /* ------- Page Elements ------- */
 
 .profile-image {
@@ -119,6 +110,13 @@ footer {
 }
 
 
+/* -------- Footer / Nax ------- */
+
+#nav-footer {
+  display: none;
+}
+
+
 
 /* ================================
     Media Queries
@@ -134,18 +132,19 @@ footer {
     font-size: 1.35rem;
   }
   
-  /* --------- Navigation -------- */
+  a {
+    padding: 12px 20px;
+  }
+  
+  
+  /* -------- Header / Nav ------- */
   
   .nav-links-header {
     display: flex;
     justify-content: center;
-/*    padding: 0 20%;*/
     margin-bottom: 25px;
   }
   
-  a {
-    padding: 12px 20px;
-  }
   
   /* ---------- Profile ---------- */
   
@@ -165,6 +164,7 @@ footer {
     text-align: left;
   }
   
+  
   /* --------- Portfolio --------- */
   
   #portfolio-examples {
@@ -182,16 +182,18 @@ footer {
     padding: 0 2%;
   }
   
+  
   /* ---------- Contact ---------- */
   
   #message {
     padding: 0 100px 20px;
   }
   
-  /* ---------- Footer ----------- */
+  
+  /* ------- Footer / Nav -------- */
   
   footer {
-    margin: 0 0 75px;
+    margin: 0 0 50px;
   }
   
   footer > a {
@@ -222,39 +224,62 @@ footer {
 
 @media (min-width: 1024px) {
   
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
   
+  p {
+    font-size: 1.2rem;
+  }
+  
+  
+  /* -------- Header / Nav ------- */
+  
+  header {
+    margin: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header > h1 {
+    font-size: 1.7rem;
+  }
+  
+  .nav-links-header {
+    margin: 0;
+  }
+  
+  .nav-links-header li {
+    margin-bottom: 0;
+  }
+  
+  .nav-links-header li a {
+    font-size: 0.85rem;
+  }
+  
+  
+  /* ---------- Profile ---------- */
+  
+  .profile-image {
+    width: 50%;
+    height: 50%;
+  }
+  
+  
+  /* --------- Portfolio --------- */
+  
+  .portfolio-block {
+    width: 32%;
+  }
+  
+  
+  /* ---------- Contact ---------- */
+  
+  #message {
+    padding: 0 200px 20px;
+  }
 }
-
-
-
-
-/* ================================
-    Helper Classes
-   ================================ */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-
-
-/* ================================
-    Print Styles
-   ================================ */
-
-@media print {
-
-    
-}
-
 
