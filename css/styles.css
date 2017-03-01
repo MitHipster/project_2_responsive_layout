@@ -100,11 +100,12 @@ footer {
   padding-bottom: 40px;
 }
 
-#skills-group {
+#skills-list {
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
-#skills-group li {
+#skills-list li {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
@@ -205,7 +206,7 @@ footer {
     padding: 0 100px;
   }
   
-  #skills {
+  #skills-group {
     display: flex;
   }
   
@@ -216,11 +217,11 @@ footer {
     padding: 0;
   }
   
-  #skills-group {
+  #skills-list {
     margin-top: 0;
   }
   
-  #skills-group li {
+  #skills-list li {
     font-size: 1.35rem;
   }
   
@@ -318,11 +319,11 @@ footer {
     padding: 0 200px;
   }
   
-  #skills-group {
+  #skills-list {
     padding: 0 30px;
   }
   
-  #skills-group li {
+  #skills-list li {
     font-size: 1.2rem;
   }
 }
